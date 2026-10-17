@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">My Portfolio</a>
+    <nav aria-label="เมนูหลัก">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main class="page">
+    <section class="panel">
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h1>Contact Me</h1>
+      <p class="lead">หากต้องการติดต่อหรือพูดคุยเกี่ยวกับโปรเจกต์ สามารถกรอกแบบฟอร์มด้านล่างได้</p>
+      <form id="contactForm" class="contact-form">
+        <label for="name">ชื่อของคุณ</label>
+        <input id="name" name="name" type="text" placeholder="กรอกชื่อ" required>
+        <label for="email">อีเมล</label>
+        <input id="email" name="email" type="email" placeholder="name@example.com" required>
+        <label for="message">ข้อความ</label>
+        <textarea id="message" name="message" rows="5" placeholder="พิมพ์ข้อความที่ต้องการส่ง" required></textarea>
+        <button class="button" type="submit">ส่งข้อความ</button>
+        <p id="formStatus" class="status" aria-live="polite">หมายเหตุ: แบบฟอร์มตัวอย่างนี้ยังไม่ได้ส่งข้อมูลไปยังอีเมลหรือเซิร์ฟเวอร์</p>
+      </form>
+      <div class="contact-links">
+        <p><strong>GitHub:</strong> <a href="https://github.com/" target="_blank" rel="noopener">github.com</a></p>
+        <p><strong>Email:</strong> 67160206@go.buu.ac.th</p>
+      </div>
+    </section>
+  </main>
+  <footer>© <span id="year"></span> My Portfolio</footer>
+  <script src="script.js"></script>
+</body>
+</html>
